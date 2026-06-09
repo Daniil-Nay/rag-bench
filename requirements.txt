@@ -1,0 +1,11 @@
+# Обязательное ядро
+numpy>=1.24
+openai>=1.40          # клиент к LM Studio / GitHub Models / любому OpenAI-совместимому API
+
+# Опционально (подхватываются, если установлены; без них проект тоже работает)
+# pypdf>=4.0          # чтобы индексировать PDF, а не только .txt/.md
+# pytest>=7.0         # для прогона tests/
+
+# Намеренно НЕТ langchain / chromadb / faiss / sentence-transformers:
+# весь RAG (chunking, dense, BM25, hybrid, MMR, eval) написан на чистом numpy,
+# чтобы было видно, что внутри, и чтобы запускалось без GPU и без интернета.

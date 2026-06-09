@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# кэш индекса пересобирается командой `python app.py build`
+data/index.npz
+data/index.npz.meta.json
